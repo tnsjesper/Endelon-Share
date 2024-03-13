@@ -7,6 +7,32 @@
   min-height: 100vh;
 }
 
+.version {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+.padding {
+  margin-left: 150px;
+}
+.center {
+  margin-right: 120px;
+  padding: 4rem 0;
+}
+
+.centerh1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-left: 5px;
+  padding: 4rem 0;
+}
+
 .description {
   display: inherit;
   justify-content: inherit;
