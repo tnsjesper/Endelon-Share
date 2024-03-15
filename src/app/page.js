@@ -1,23 +1,30 @@
-import Image from "next/image";
+"use client";
 import styles from "../../public/silicon_dark.min.css";
 import style from "../../public/page.module.css";
 const { v4: uuidv4 } = require("uuid");
 
-
-var uuid = uuidv4();
+const uuid = uuidv4();
 
 export default function Home() {
+  const sendinput = async () => {
+    await fetch(`/api/done`, {
+      method: "POST",
+      body: JSON.stringify({
+        input: document.getElementById("input").value,
+        uuid: uuid,
+      }),
+    });
+  };
   return (
     <main className={styles.main}>
       <h1 className={style.centerh1}>Data Share</h1>
-     
-      <form action='/share/{uuid}' method="post">
+
+      <form className={style.dataform}>
         <br />
-        <textarea id="data" name="data" rows="20" cols="20"></textarea>
+        <textarea id="input" name="input" rows="20" cols="20"></textarea>
         <br />
-        <button type="submit">Submit</button>
+        <button onClick={sendinput}>Submit</button>
       </form>
-     
     </main>
   );
 }

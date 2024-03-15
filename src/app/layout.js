@@ -21,23 +21,31 @@ export default function RootLayout({ children }) {
         <footer>
           <p className={style.padding}>
             Made by{" "}
-            <Link class="a" href="https://tnsjesper.xyz" target="_blank">
+            <Link href="https://tnsjesper.xyz" target="_blank">
               tnsjesper
             </Link>{" "}
             for{" "}
-            <Link class="a" href="https://endelon.link" target="_blank">
+            <Link href="https://endelon.link" target="_blank">
               Endelon
             </Link>
-            .
-            <br />
-            <Link
-              class={style.center}
-              target="_blank"
-              href="https://tnsjesper.xyz/impressum.php"
-            >
-              Imprint
-            </Link>
+            .{" "}
           </p>
+          <Link target="_blank" href="https://tnsjesper.xyz/impressum.php">
+            <img
+              className={style.leagel}
+              src="https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/badge/default/24px.svg"
+              height={50}
+              width={50}
+            ></img>
+          </Link>
+          <Link target="_blank" href="https://github.com/tnsjesper/Endelon-Share">
+            <img
+              className={style.github}
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+              width={50}
+              height={50}
+            />
+          </Link>
         </footer>
       </body>
     </html>

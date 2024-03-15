@@ -1,10 +1,16 @@
 .main {
-  display: flex;
   flex-direction: column;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
-  min-height: 100vh;
+  min-height: 400vh;
+}
+
+.dataform {
+  max-width: 400px;
+  max-height: 500px;
+  margin-left: 20px;
 }
 
 .version {
@@ -16,21 +22,30 @@
   opacity: 0.6;
 }
 
-.padding {
-  margin-left: 150px;
+.github {
+  position: absolute;
+  margin-left: 240px;
 }
-.center {
+
+.leagel {
+  position: absolute;
+  margin-left: 130px;
+}
+
+.padding {
+  margin-left: 100px;
+}
+.footer {
+  display: contents;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   margin-right: 120px;
   padding: 4rem 0;
 }
 
 .centerh1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  margin-left: 5px;
-  padding: 4rem 0;
+  margin-left: 100px;
 }
 
 .description {
